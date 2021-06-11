@@ -15,6 +15,8 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 
 import { NgAuthService } from "./ng-auth.service";
+ import {ElementModule} from './elements/element.module';
+ import {CourtlistenerModule} from './courtlistener/courtlistener.module';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { NgAuthService } from "./ng-auth.service";
     VerifyEmailComponent
   ],
   imports: [
+    CourtlistenerModule,
+    ElementModule,
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),

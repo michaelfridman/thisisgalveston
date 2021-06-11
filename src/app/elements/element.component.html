@@ -1,0 +1,9 @@
+    <div class="input-group mb-3 input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Message</span>
+      </div>
+       <input class="form-control" #input value="Message">
+    <button class="w-100 btn btn-lg btn-primary form-control" (click)="popup.showAsComponent(input.value)">Show as component</button>
+    <button class="w-100 btn btn-lg btn-primary form-control" (click)="popup.showAsElement(input.value)">Show as element</button>
+    </div>
+

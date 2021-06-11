@@ -8,6 +8,8 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 
 import { AuthGuard } from "./auth.guard";
+import { ElementComponent } from './elements/element.component';
+import { PeopleComponent } from './courtlistener/people/people.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
@@ -15,7 +17,9 @@ const routes: Routes = [
   { path: 'sign-up', component: SignUpComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'email-verification', component: VerifyEmailComponent }
+  { path: 'email-verification', component: VerifyEmailComponent },
+  { path: 'elements', component: ElementComponent},
+    { path: 'people', component: PeopleComponent},
 ];
 
 @NgModule({

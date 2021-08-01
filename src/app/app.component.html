@@ -1,16 +1,9 @@
-<div class="container">
-<app-toolbar></app-toolbar>
-<router-outlet></router-outlet>
-  <div class="row">
-    <div class="col-sm-12">
-      <hr>
-    </div>
-  </div>
-  <div style="text-align:center;margin-top:50px;" class="footer">
-    <div class="col-sm-12">
-      <p>&copy; thisisgalveston</p>
-      <p><img src="assets/DO_Powered_by_Badge_blue.svg" alt="Powered by Digital Ocean" width="33%"></p>
-    </div>
-  </div>
-</div>
+<div class="d-flex flex-column h-100">
+  <app-nav-bar></app-nav-bar>
 
+  <div class="container flex-grow-1 flex-shrink-1">
+    <router-outlet></router-outlet>
+  </div>
+
+  <app-footer></app-footer>
+</div>

@@ -1,4 +1,11 @@
-/* Show it is fixed to the top */
+/* Bottom left text */
+.bottom-centered {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  right:50%;
+}
+
 body {
   min-height: 75rem;
   padding-top: 4.5rem;

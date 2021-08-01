@@ -1,39 +1,43 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { FixesAllComponent } from './fixes-all/fixes-all.component';
+import { LoginComponent } from './login/login.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { ArticleListComponent } from './article-list/article-list.component';
 
-import { AngularFireModule } from "@angular/fire";
-import { AngularFireAuthModule } from "@angular/fire/auth";
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { environment } from '../environments/environment';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { SignInComponent } from './components/sign-in/sign-in.component';
-import { SignUpComponent } from './components/sign-up/sign-up.component';
-import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
-import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
-
-import { NgAuthService } from "./ng-auth.service";
+import { HttpClientModule } from '@angular/common/http';
+import { ArticleComponent } from './article/article.component';
+import { SearchComponent } from './search/search.component';
+import { FormsModule } from '@angular/forms';
+import { FixesSearchComponent } from './fixes-search/fixes-search.component';
+import { FixComponent } from './fix/fix.component';
+import { Data } from './data-provider';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    SignInComponent,
-    SignUpComponent,
-    ForgotPasswordComponent,
-    VerifyEmailComponent
+    ToolbarComponent,
+    FixesAllComponent,
+    LoginComponent,
+    WelcomeComponent,
+    ArticleListComponent,
+    ArticleComponent,
+    SearchComponent,
+    FixesSearchComponent,
+    FixComponent
   ],
   imports: [
+    FormsModule,
+    HttpClientModule,
     BrowserModule,
-    AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule,
-    AngularFirestoreModule,
+    AppRoutingModule
   ],
-  providers: [NgAuthService],
+  providers: [Data],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

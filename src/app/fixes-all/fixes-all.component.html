@@ -1,0 +1,55 @@
+<div class="container">
+  <!-- {{fixes |  json}} -->
+  <div style="height:90px;" class="row"></div>
+  <div class="row">
+    <div class="col-sm-12"><a routerLink="/" class="breadcrumb">Home</a>&nbsp;&nbsp;> All Fixes</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <H3 style="color:maroon">All Dodge/Jeep/Chrysler Fixes</H3>
+    </div>
+    <app-search></app-search>
+    <!-- <div class="col-sm-6 text-right">
+      <form action="searchFix.do" method="post" name="" class="form-inline">
+        <div class="form-group"><input type="text" name="keyword" placeholder="Search Fixes &amp; Articles"
+            class="form-control input"></div><button type="Submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+  </div>-->
+  <div class="row">
+    <div class="col-sm-12">
+      <hr>
+    </div>
+  </div>
+
+
+
+<div *ngFor="let fix of fixes">
+    <!-- {{fix | json}} -->
+<div class="row">
+    <div class="col-sm-12">
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <p><span> <strong>Vehicle:&nbsp;</strong></span><span>{{fix.vehicle}}</span></p>
+      <p><span> <strong>Concern:&nbsp;</strong></span><span>{{fix.concern}}</span></p>
+      <p><span> <strong>Cause:&nbsp;</strong></span><span>{{fix.cause}}</span></p>
+      <p><span> <strong>Resolution:&nbsp;</strong></span><span>{{fix.resolution}}</span></p>
+      <p><span> <strong>Details:&nbsp;</strong></span><span>{{fix.details}} </span></p>
+      <p><span> <strong>temp:&nbsp;</strong></span><span>      {{fix._id | json}}       {{fix.id | json}}</span></p>
+
+    </div>
+  </div>
+  </div>
+
+
+
+
+</div>

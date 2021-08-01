@@ -1,0 +1,73 @@
+<div class="container">
+
+  <div *ngIf="gotResults">
+
+    <div style="height:90px;" class="row">
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12"><a routerLink="/" class="breadcrumb">Home</a>&nbsp;&nbsp;>&nbsp;&nbsp;Search Results
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <hr>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div *ngIf="searchTerm != ''">
+        <H3 style="color:maroon">Search Results for &quot;{{searchTerm}}&quot;</H3>
+      </div>
+    </div>
+
+    <div class="col-sm-12">
+      <div class="submit-form form-inline">
+        <div *ngIf="!submitted">
+          <div class="form-group">
+            <input type="text" class="form-control input" id="keyword"
+            required [(ngModel)]="keyword.keyword" placeholder="Search Fixes &amp; Articles" name="keyword" />
+            <button (click)="doSearch()" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="gotResults">
+    <div class="row">
+      <div class="col-sm-12">
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <h3 style="color:maroon;">Fix Results:</h3>
+        <div *ngFor="let problem of resultsFixes">
+          <hr>
+          <p> <strong>Problem:</strong>&nbsp;<a routerLink="/fix/{{problem.id}}">{{problem.concern}}</a></p>
+          <hr>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h3 style="color:maroon;">Article Results:</h3>
+        <div *ngFor="let title of resultsArticles">
+          <hr>
+          <p><strong>Title:
+              &nbsp;<a routerLink="/article/{{title.id}}">{{title.title}}</a></strong>
+          </p>
+          <hr>
+        </div>
+        <!-- <hr>
+          <p><strong>Title:
+              &nbsp;<a href="view-article.do?articleid=72003">Electrical Diagnosis</a></strong></p>
+          <hr> -->
+      </div>
+    </div>
+  </div>
+</div>
+

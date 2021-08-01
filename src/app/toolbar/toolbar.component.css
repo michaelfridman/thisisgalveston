@@ -1,0 +1,26 @@
+/* Show it is fixed to the top */
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+.navbar {
+  background-color: #2c3e50; border-color: #202d3b;
+}
+
+.nav-item {
+  margin: 10px;
+}
+.navbar-link {
+  color:white;
+
+}
+
+
+.navbar-brand {
+    color:white;
+}
+
+.btn {
+  width: 80px;
+}

@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" routerLink="/">thisisgalveston</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggle()" id="bt">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <ng-container *ngIf="!show">
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="navbar-link" routerLink="/fixes-all">All Fixes</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-link" routerLink="/article-list">Articles</a>
+        </li>
+              </ul>
+      <ul class="navbar-nav mr-autonavbar-right">
+        <li class="nav-item">
+          <a class="navbar-link" routerLink="/login">Login</a>
+        </li>
+      </ul>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="show && !firstClick">
+    <div class="navbar-nav open menu">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+          <button class="btn btn-light" routerLink="/fixes-all">All Fixes</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-light" routerLink="/article-list">Articles</button>
+        </li>
+      </ul>
+      <ul class="navbar-nav mr-autonavbar-right">
+        <li class="nav-item">
+          <button class="btn btn-light" routerLink="/login">Login</button></li>
+      </ul>
+    </div>
+
+  </ng-container>
+</nav>
+<br>
+
+

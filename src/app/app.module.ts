@@ -35,6 +35,7 @@ import { ArticleComponent } from './article/article.component';
 import { SearchComponent } from './search/search.component';
 
 import { BootstrapComponent } from './bootstrap/bootstrap.component';
+import { MapboxComponent } from './mapbox/mapbox.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { BootstrapComponent } from './bootstrap/bootstrap.component';
     HomeContentComponent,
     LoadingComponent,
     ExternalApiComponent,
-    ErrorComponent
+    ErrorComponent,
+    MapboxComponent
   ],
   imports: [
         FormsModule,

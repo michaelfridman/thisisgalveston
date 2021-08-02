@@ -12,6 +12,9 @@ const { domain, clientId, audience, apiUri, errorPath } = config as {
 };
 
 export const environment = {
+    mapbox:{
+    accessToken: 'pk.eyJ1IjoiZnJpZG1hbnJlc3VtZSIsImEiOiJja3FvMm9pcXcwbmJ3MnZtem84MnZuYmttIn0.R8e972435mv_50YV5Ku82w'
+  },
   production: false,
   auth: {
     domain,

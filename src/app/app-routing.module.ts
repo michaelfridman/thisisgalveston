@@ -15,6 +15,7 @@ import { SearchComponent } from './search/search.component';
 import { FixesSearchComponent } from './fixes-search/fixes-search.component';
 import { FixComponent } from './fix/fix.component';
 import { BootstrapComponent } from './bootstrap/bootstrap.component';
+import { MapboxComponent } from './mapbox/mapbox.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,7 @@ const routes: Routes = [
   //   pathMatch: 'full',
   // },
   { path: '', component: WelcomeComponent, pathMatch: 'full' },
+  { path: 'mapbox', component: MapboxComponent },
   { path: 'bootstrap', component: BootstrapComponent },
   { path: 'fixes-all', component: FixesAllComponent },
   { path: 'search/:keyword', component: SearchComponent },

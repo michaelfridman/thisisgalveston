@@ -1,3 +1,14 @@
 a {
   cursor: pointer;
 }
+
+  .component {
+
+    background-image: url("https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/-94.7977,29.3013,9.67,0.00,0.00/1000x600@2x?access_token=pk.eyJ1IjoiZnJpZG1hbnJlc3VtZSIsImEiOiJja3FvMm9pcXcwbmJ3MnZtem84MnZuYmttIn0.R8e972435mv_50YV5Ku82w");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+        height: 100%;
+    padding: 0
+  }

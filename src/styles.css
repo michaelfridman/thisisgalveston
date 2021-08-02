@@ -26,27 +26,6 @@
   } */
 
 
-body {
-  width: 1200px;
-  height: 1200px;
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  z-index: 0;
-}
-
-body::after {
-  background: url("https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/-94.7977,29.3013,9.67,0.00,0.00/1000x600@2x?access_token=pk.eyJ1IjoiZnJpZG1hbnJlc3VtZSIsImEiOiJja3FvMm9pcXcwbmJ3MnZtem84MnZuYmttIn0.R8e972435mv_50YV5Ku82w");
-  content: "";
-  opacity: 0.9;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: -1;
-}
-
   .navbar-light.bg-light .nav-link {
     color: #041433
   }

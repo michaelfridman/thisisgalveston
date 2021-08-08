@@ -43,7 +43,7 @@ export class FrogComponent implements OnInit {
 
   frogError: Error = null;
   selectedFrogs: any[] = [];
-  showDescription: Boolean = false;
+  showDescription: number = 0;
   createFrog() {
     console.error('TODO: implement createFrog')
     // const frog: Frog = { title: this.title, isCompleted: this.isCompleted };
@@ -52,6 +52,17 @@ export class FrogComponent implements OnInit {
     //   this.isCompleted = false;
   }
 
+  deSelect(that: SelectedFrog) {
+    // both de and select are select, right?
+    this.store.dispatch(FrogActions.BeginSelectFrogAction());
+    for (var i = 0; i < this.selectedFrogs.length; i++) {
+      if (this.selectedFrogs[i]['id'] === that.id) {
+        this.selectedFrogs.splice(i, 1);
+      }
+    }
+    console.log(this.selectedFrogs)
+    this.store.dispatch(FrogActions.EndSelectFrogAction());
+  }
   select(that: SelectedFrog) {
     console.log(that)
     this.store.dispatch(FrogActions.BeginSelectFrogAction());
@@ -61,7 +72,6 @@ export class FrogComponent implements OnInit {
       alert('Already got ' + that.name)
     }
     this.store.dispatch(FrogActions.EndSelectFrogAction());
-
   }
   ngOnDestroy() {
     if (this.FrogSubscription) {

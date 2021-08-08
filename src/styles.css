@@ -25,7 +25,11 @@
     padding: 0
   } */
 
-
+  body {
+    background-image: url("./assets/habitat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .navbar-light.bg-light .nav-link {
     color: #041433
   }
@@ -307,9 +311,9 @@
     font-size: 16px
   }
 
-  body {
+  /* body {
     color: #041433
-  }
+  } */
 
 
 

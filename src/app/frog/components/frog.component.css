@@ -1,27 +1,15 @@
-  .component {
 
-    background-image: url("../../../assets/habitat.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-        height: 100%;
-        width:100%;
-      min-height: 75rem;
-  padding-top: 4.5rem;
-  opacity: 1;
-  }
 
 .container{
   opacity: .8;
   transition: none;
 }
-.container:hover{
+/* .container:hover{
   opacity: 1;
   transition: none;
   margin-left:20px;
   margin-right:20px;
-}
+} */
 
 .navbar-dark {
   color: white;

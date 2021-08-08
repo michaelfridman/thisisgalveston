@@ -2,10 +2,7 @@
   <div class="container">
     <nav class="navbar navbar-expand-md navbar-dark fixed-bottom bg-dark">
       <div class="container-fluid">
-        <h2>My Future Frogs!</h2>
-        <!-- <div class="card-text" *ngFor="let frog of selectedFrogs" [id]="frog.id">
-      <img src="assets/basket.svg"><input type="text" width="50" [(value)]="frog.name">
-    </div> -->
+        <h2 class="fw-bold">My Future Frogs!</h2>
         <div *ngIf="frogError?.message">
           <div class="alert alert-danger" role="alert" id="frogError">
             Some error occurred. Please try again
@@ -18,14 +15,13 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item" *ngFor="let frog of selectedFrogs" [id]="frog.id">
-              <button class="btn btn-outline-light">{{frog.name}}</button>
+              <button class="btn btn-outline-light">{{frog.name}}<img class="icon" (click)="deSelect(frog)" src="assets/x-circle-fill.svg"></button>
             </li>
           </ul>
           <!-- SEARCH -->
         </div>
       </div>
     </nav>
-
 
     <hr />
 
@@ -42,11 +38,11 @@
               <div id="frog.id">{{ frog.name }}
               </div>
               <div class="col-md-4 frog-item d-flex justify-content-between align-items-center">
-                <a *ngIf="frog.description" (click)="showDescription=!showDescription">
+                <a *ngIf="frog.description" (click)="showDescription==frog.id?showDescription=0:showDescription=frog.id">
                   <img class="icon" src="assets/info-circle.svg">
                 </a>
               </div>
-              <ng-container *ngIf="showDescription && frog.description">
+              <ng-container *ngIf="showDescription==frog.id && frog.description">
                 <p class="text-white bg-dark"><small>{{ frog.description }}</small></p>
               </ng-container>
             </div>

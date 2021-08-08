@@ -33,7 +33,7 @@ export class MapboxComponent implements OnInit {
   addRandomMarkers(){
 
     for (let i = 0; i < 10; i++){
-    let move = Math.random()/10;
+    let move = Math.random()/(10/i);
     this.addMarker([this.lng + move, this.lat + move], { color: 'black', rotation: 45 });
     }
 

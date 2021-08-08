@@ -16,28 +16,14 @@ import { FixesSearchComponent } from './fixes-search/fixes-search.component';
 import { FixComponent } from './fix/fix.component';
 import { BootstrapComponent } from './bootstrap/bootstrap.component';
 import { MapboxComponent } from './mapbox/mapbox.component';
+import { FrogComponent } from './frog/components/frog.component';
 
 const routes: Routes = [
-  {
-    path: 'profile',
-    component: ProfileComponent,
-    canActivate: [AuthGuard],
-  },
-  {
-    path: 'external-api',
-    component: ExternalApiComponent,
-    canActivate: [AuthGuard],
-  },
-  {
-    path: 'error',
-    component: ErrorComponent,
-  },
-  // {
-  //   path: '',
-  //   component: HomeComponent,
-  //   pathMatch: 'full',
-  // },
   { path: '', component: WelcomeComponent, pathMatch: 'full' },
+  { path: 'frog', component: FrogComponent, canActivate: [AuthGuard], },
+  { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard], },
+  { path: 'external-api', component: ExternalApiComponent, canActivate: [AuthGuard], },
+  { path: 'error', component: ErrorComponent, },
   { path: 'mapbox', component: MapboxComponent },
   { path: 'bootstrap', component: BootstrapComponent },
   { path: 'fixes-all', component: FixesAllComponent },

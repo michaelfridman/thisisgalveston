@@ -2,17 +2,17 @@
 .component {
   background-color: white;
   opacity: .7;
-  padding-left:20px;
-  padding-right:20px;
-    transition: 500ms;
+  /* padding-left:26px;
+  padding-right:26px; */
+    /* transition: 500ms; */
 }
 
 .component:hover {
   background-color: white;
   opacity: .95;
-    padding-left:27px;
-  padding-right:27px;
-  transition: 500ms;
+    /* padding-left:27px;
+  padding-right:27px; */
+  /* transition: 500ms; */
 }
   /* body, html {
 
@@ -133,7 +133,8 @@
 
   @media (max-width:767px) {
     .nav-item {
-      margin-bottom: 1rem
+      margin-bottom: 1rem;
+      margin-left: 60px;
     }
 
     .nav-item .nav-link {

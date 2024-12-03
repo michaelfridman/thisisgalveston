@@ -1,476 +1,247 @@
-## mgl-map [Mapbox GL API](https://www.mapbox.com/mapbox-gl-js/api#map)
+# Notus React <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnotus-react%2F%23%2F&text=Start%20your%20development%20with%20a%20Free%20Tailwind%20CSS%20and%20React%20UI%20Kit%20and%20Admin.%20Let%20Notus%20React%20amaze%20you%20with%20its%20cool%20features%20and%20build%20tools%20and%20get%20your%20project%20to%20a%20whole%20new%20level.%20" target="_blank">![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)</a>
 
-### Example
+![version](https://img.shields.io/badge/version-1.1.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) <a href="https://github.com/creativetimofficial/notus-react/issues?q=is%3Aopen+is%3Aissue" target="_blank">![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/notus-react.svg)</a> <a href="https://github.com/creativetimofficial/notus-react/issues?q=is%3Aissue+is%3Aclosed" target="_blank">![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/notus-react.svg)</a> <a href="https://gitter.im/creative-tim-general/Lobby" target="_blank">![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)</a> <a href="https://discord.gg/E4aHAQy" target="_blank">![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)</a>
 
-```typescript
-...
-@Component({
-  template: `
-  <mgl-map
-    [style]="'mapbox://styles/mapbox/streets-v9'"
-    [zoom]="[9]"
-    [center]="[-74.50, 40]"
-    (mapLoad)="map = $event"
-  ></mgl-map>
-  `,
-...
-})
-export class DisplayMapComponent {
-  map: Map; // Mapbox GL Map object (Mapbox is ran outside angular zone, keep that in mind when binding events from this object)
-...
-}
+![Notus React](https://github.com/creativetimofficial/public-assets/blob/master/notus-react/notus-react.jpg?raw=true)
+
+### A beautiful UI Kit and Admin for Tailwind CSS and React.
+
+Start your development with a Free Tailwind CSS and React UI Kit and Admin. Let Notus React amaze you with its cool features and build tools and get your project to a whole new level.
+
+Notus React is Free and Open Source. It features multiple HTML and React elements and it comes with dynamic components for React.
+
+It is based on [Tailwind Starter Kit](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation?ref=nr-github-readme) by Creative Tim, and it is build with both presentation pages, and pages for an admin dashboard.
+
+Speed up your web development with a beautiful product made by <a href="https://creative-tim.com/" target="_blank">Creative Tim </a>.
+If you like bright and fresh colors, you will love this Free Tailwind CSS Template! It features a huge number of components that can help you create amazing websites.
+
+### Get Started
+
+- Install NodeJS **LTS** version from <a href="https://nodejs.org/en/?ref=creativetim">NodeJs Official Page</a>
+- Download the product on this page
+- Unzip the downloaded file to a folder in your computer
+- Open Terminal
+- Go to your file project (where you’ve unzipped the product)
+- (If you are on a linux based terminal) Simply run `npm run install:clean`
+- (If not) Run in terminal `npm install`
+- (If not) Run in terminal `npm run build:tailwind` (each time you add a new class, a class that does not exist in `src/assets/styles/tailwind.css`, you will need to run this command)
+- (If not) Run in terminal `npm start`
+- Navigate to https://localhost:3000
+- Check more about [Tailwind CSS](https://tailwindcss.com/?ref=creativetim)
+
+### Pages
+
+If you want to get inspiration or just show something directly to your clients,
+you can jump start your development with our pre-built example pages. You will be able
+to quickly set up the basic structure for your web project.
+
+Here are all the page from the project:
+- [Presentation](https://demos.creative-tim.com/notus-react/?ref=nr-github-readme)
+- Admin Samples
+  - [Dashboard](https://demos.creative-tim.com/notus-react/admin/dashboard?ref=nr-github-readme)
+  - [Settings](https://demos.creative-tim.com/notus-react/admin/settings?ref=nr-github-readme)
+  - [Tables](https://demos.creative-tim.com/notus-react/admin/tables?ref=nr-github-readme)
+  - [Maps](https://demos.creative-tim.com/notus-react/admin/maps?ref=nr-github-readme)
+- Authentication Samples
+  - [Login](https://demos.creative-tim.com/notus-react/auth/login?ref=nr-github-readme)
+  - [Register](https://demos.creative-tim.com/notus-react/auth/register?ref=nr-github-readme)
+- Presentation Samples
+  - [Landing](https://demos.creative-tim.com/notus-react/landing?ref=nr-github-readme)
+  - [Profile](https://demos.creative-tim.com/notus-react/profile?ref=nr-github-readme)
+
+
+### Fully Coded Components
+
+Notus React is built with over frontend 120 components, giving you the freedom of choosing and combining. All components can take variations in colors, that you can easily modify using Tailwind CSS classes (NOTE: each time you add a new class, a class that does not exist in `src/assets/styles/tailwind.css`, you will need to compile again tailwind).
+
+You will save a lot of time going from prototyping to full-functional code, because all elements are implemented.
+This Free Tailwind CSS Template is coming with prebuilt examples, so the development process is seamless, switching from our pages to the real website is very easy to be done.
+
+Every element has multiple states for colors, styles, hover, focus, that you can easily access and use.
+
+
+### CSS Components
+
+Notus React comes with 120 Fully Coded CSS elements, such as [Alerts](https://www.creative-tim.com/learning-lab/tailwind/react/alerts/notus?ref=nr-github-readme), [Buttons](https://www.creative-tim.com/learning-lab/tailwind/react/buttons/notus?ref=nr-github-readme), [Inputs](https://www.creative-tim.com/learning-lab/tailwind/react/inputs/notus?ref=nr-github-readme) and many more.
+
+Please [check all of them here](https://www.creative-tim.com/learning-lab/tailwind/react/alerts/notus?ref=nr-github-readme).
+
+### React Components
+
+We also feature the following 18 dynamic components:
+- [Alerts](https://www.creative-tim.com/learning-lab/tailwind/react/alerts/notus?ref=nr-github-readme)
+- [Popper for Menus](https://www.creative-tim.com/learning-lab/tailwind/react/dropdowns/notus?ref=nr-github-readme)
+- [Menus](https://www.creative-tim.com/learning-lab/tailwind/react/menus/notus?ref=nr-github-readme)
+- [Modals](https://www.creative-tim.com/learning-lab/tailwind/react/modals/notus?ref=nr-github-readme)
+- [Navbars](https://www.creative-tim.com/learning-lab/tailwind/react/navbar/notus?ref=nr-github-readme)
+- [Popper for popover content](https://www.creative-tim.com/learning-lab/tailwind/react/popovers/notus?ref=nr-github-readme)
+- [Tabs](https://www.creative-tim.com/learning-lab/tailwind/react/tabs/notus?ref=nr-github-readme)
+- [Popper for tooltips content](https://www.creative-tim.com/learning-lab/tailwind/react/tooltips/notus?ref=nr-github-readme)
+
+
+## Table of Contents
+
+* [Versions](#versions)
+* [Documentation](#documentation)
+* [Quick Start](#quick-start)
+* [Deploy](#deploy)
+* [Files and folders](#files-and-folders)
+* [Browser Support](#browser-support)
+* [Reporting Issues](#reporting-issues)
+* [Licensing](#licensing)
+* [Useful Links](#useful-links)
+* [Resources](#resources)
+
+## Versions
+
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/angular.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/notus-angular?ref=nr-github-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/js.png?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/notus-js?ref=nr-github-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/nextjs.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/notus-nextjs?ref=nr-github-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/notus-react?ref=nr-github-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/svelte.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/notus-svelte?ref=nr-github-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vue.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/vue-notus?ref=nr-github-readme)
+
+
+| Angular | JavaScript / HTML | NextJS | React | Svelte | VueJS |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| [![Notus Angular](https://github.com/creativetimofficial/public-assets/blob/master/notus-angular/notus-angular.jpg?raw=true)](https://www.creative-tim.com/product/notus-angular?ref=nr-github-readme)  | [![Notus JS](https://github.com/creativetimofficial/public-assets/blob/master/notus-js/notus-js.jpg?raw=true)](https://www.creative-tim.com/product/notus-js?ref=nr-github-readme)  | [![Notus NextJS](https://github.com/creativetimofficial/public-assets/blob/master/notus-nextjs/notus-nextjs.jpg?raw=true)](https://www.creative-tim.com/product/notus-nextjs?ref=nr-github-readme)  | [![Notus React](https://github.com/creativetimofficial/public-assets/blob/master/notus-react/notus-react.jpg?raw=true)](https://www.creative-tim.com/product/notus-react?ref=nr-github-readme)  | [![Notus Svelte](https://github.com/creativetimofficial/public-assets/blob/master/notus-svelte/notus-svelte.jpg?raw=true)](https://www.creative-tim.com/product/notus-svelte?ref=nr-github-readme)  | [![Vue Notus](https://github.com/creativetimofficial/public-assets/blob/master/vue-notus/vue-notus.jpg?raw=true)](https://www.creative-tim.com/product/vue-notus?ref=nr-github-readme)
+
+## Documentation
+The documentation for the Notus React is hosted at our <a href="https://www.creative-tim.com/learning-lab/tailwind/react/overview/notus?ref=nr-readme" target="_blank">website</a>.
+
+## Quick start
+
+- <a href="https://www.creative-tim.com/product/notus-react?ref=nr-github-readme" target="_blank">Download from Creative Tim</a>.
+- <a href="https://github.com/creativetimofficial/notus-react" target="_blank">Check it on Github</a>.
+
+## Deploy
+
+:rocket: You can deploy your own version of the template to Genezio with one click:
+
+[![Deploy to Genezio](https://raw.githubusercontent.com/Genez-io/graphics/main/svg/deploy-button.svg)](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/notus-react&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)
+
+## Files and Folder
+
+This is the project structure that you will get upon the download:
+```
+notus-react
+.
+├── CHANGELOG.md
+├── ISSUE_TEMPLATE.md
+├── LICENSE.md
+├── README.md
+├── gulpfile.js
+├── jsconfig.json
+├── package.json
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── src
+│   ├── assets
+│   │   ├── img
+│   │   │   ├── github.svg
+│   │   │   └── google.svg
+│   │   └── styles
+│   │       ├── index.css
+│   │       └── tailwind.css
+│   ├── components
+│   │   ├── Cards
+│   │   │   ├── CardBarChart.js
+│   │   │   ├── CardLineChart.js
+│   │   │   ├── CardPageVisits.js
+│   │   │   ├── CardProfile.js
+│   │   │   ├── CardSettings.js
+│   │   │   ├── CardSocialTraffic.js
+│   │   │   ├── CardStats.js
+│   │   │   └── CardTable.js
+│   │   ├── Dropdowns
+│   │   │   ├── IndexDropdown.js
+│   │   │   ├── NotificationDropdown.js
+│   │   │   ├── PagesDropdown.js
+│   │   │   ├── TableDropdown.js
+│   │   │   └── UserDropdown.js
+│   │   ├── Footers
+│   │   │   ├── Footer.js
+│   │   │   ├── FooterAdmin.js
+│   │   │   └── FooterSmall.js
+│   │   ├── Headers
+│   │   │   └── HeaderStats.js
+│   │   ├── Maps
+│   │   │   └── MapExample.js
+│   │   ├── Navbars
+│   │   │   ├── AdminNavbar.js
+│   │   │   ├── AuthNavbar.js
+│   │   │   └── IndexNavbar.js
+│   │   └── Sidebar
+│   │       └── Sidebar.js
+│   ├── index.js
+│   ├── layouts
+│   │   ├── Admin.js
+│   │   └── Auth.js
+│   └── views
+│       ├── Index.js
+│       ├── Landing.js
+│       ├── Profile.js
+│       ├── admin
+│       │   ├── Dashboard.js
+│       │   ├── Maps.js
+│       │   ├── Settings.js
+│       │   └── Tables.js
+│       └── auth
+│           ├── Login.js
+│           └── Register.js
+└── tailwind.config.js
 ```
 
-### Inputs
-
-Init only:
-
-- **hash**: `boolean`
-- **refreshExpiredTiles**: `boolean`
-- **failIfMajorPerformanceCaveat**: `boolean`
-- **classes**: `string[]`
-- **bearingSnap**: `number`
-- **interactive**: `boolean`
-- **pitchWithRotate**: `boolean`
-- **attributionControl**: `boolean`
-- **logoPosition**: `'top-left' | 'top-right' | 'bottom-left' | 'bottom-right'`
-- **maxTileCacheSize**: `number`
-- **localIdeographFontFamily**: `string`
-- **preserveDrawingBuffer**: `boolean`
-- **renderWorldCopies**: `boolean`
-- **trackResize**: `boolean`
-- **transformRequest**: `Function`
-- **bounds**: [`LngLatBoundsLike`](https://www.mapbox.com/mapbox-gl-js/api/#lnglatboundslike) Use **fitBounds** if you want the dynamic version. Use **fitBoundsOptions** to specify bounds options.
-- [ngx] **accessToken**: `string` https://www.mapbox.com/mapbox-gl-js/api/#accesstoken
-- [ngx] **customMapboxApiUrl**: `string` Change url of `mapbox://` (set config.API_URL)
-
-Dynamic:
-
-- **minZoom**: `number`
-- **maxZoom**: `number`
-- **scrollZoom**: `boolean`
-- **dragRotate**: `boolean`
-- **touchZoomRotate**: `boolean`
-- **doubleClickZoom**: `boolean`
-- **keyboard**: `boolean`
-- **dragPan**: `boolean`
-- **boxZoom**: `boolean`
-- **style**: `Style | string`
-- **center**: `LngLatLike`
-- **maxBounds**: [`LngLatBoundsLike`](https://www.mapbox.com/mapbox-gl-js/api/#lnglatboundslike)
-- **zoom**: `[number]` The initial zoom level of the map. If zoom is not specified in the constructor options, Mapbox GL JS will look for it in the map's style object. If it is not specified in the style, either, it will default to 0. [ngx] It's an array in order to be able to force changes (by changing the array ref) because this input can be desync after user manipulation on map.
-- **bearing**: `[number]` The initial bearing (rotation) of the map, measured in degrees counter-clockwise from north. If bearing is not specified in the constructor options, Mapbox GL JS will look for it in the map's style object. If it is not specified in the style, either, it will default to 0. [ngx] It's an array in order to be able to force changes (by changing the array ref) because this input can be desync after user manipulation on map.
-- **pitch**: `[number]` The initial pitch (tilt) of the map, measured in degrees away from the plane of the screen (0-60). If pitch is not specified in the constructor options, Mapbox GL JS will look for it in the map's style object. If it is not specified in the style, either, it will default to 0. [ngx] It's an array in order to be able to force changes (by changing the array ref) because this input can be desync after user manipulation on map.
-- **fitBoundsOptions** https://www.mapbox.com/mapbox-gl-js/api/#map#fitbounds
-- [ngx] **fitBounds**: [`LngLatBoundsLike`](https://www.mapbox.com/mapbox-gl-js/api/#lnglatboundslike) If set, the map will center on the given coordinates. Dynamic version of **bounds**.
-- [ngx] **fitScreenCoordinates**: `[PointLike, PointLike]` https://www.mapbox.com/mapbox-gl-js/api/#map#fitscreencoordinates (use movingOptions as options)
-- [ngx] **movingMethod**: `'jumpTo' | 'easeTo' | 'flyTo'` _(Default: `'flyTo'`)_ Define the method used when changing the center or zoom position.
-- [ngx] **movingOptions** Options passed to the moving method (https://www.mapbox.com/mapbox-gl-js/api/#map#flyto https://www.mapbox.com/mapbox-gl-js/api/#map#easeto https://www.mapbox.com/mapbox-gl-js/api/#map#jumpto)
-- [ngx] **panToOptions** Options passed to panTo (https://www.mapbox.com/mapbox-gl-js/api/#map#panto)
-- [ngx] **centerWithPanTo**: `boolean` If set to true, then [panTo](https://www.mapbox.com/mapbox-gl-js/api/#map#panto) is used instead of the specified method in **movingMethod** (if only **center** is changed, see live-update-feature example)
-- [ngx] **cursorStyle**: `string` change the cursor of the map canvas (`canvas.style.cursor`).
-
-### Outputs
-
-- **mapResize**: `void`
-- **mapRemove**: `void`
-- **mapMouseDown**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **mapMouseUp**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **mapMouseMove**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **mapClick**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **mapDblClick**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **mapMouseEnter**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **mapMouseLeave**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **mapMouseOver**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **mapMouseOut**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **mapContextMenu**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **mapTouchStart**: [`MapTouchEvent`](https://www.mapbox.com/mapbox-gl-js/api/#maptouchevent)
-- **mapTouchEnd**: [`MapTouchEvent`](https://www.mapbox.com/mapbox-gl-js/api/#maptouchevent)
-- **mapTouchMove**: [`MapTouchEvent`](https://www.mapbox.com/mapbox-gl-js/api/#maptouchevent)
-- **mapTouchCancel**: [`MapTouchEvent`](https://www.mapbox.com/mapbox-gl-js/api/#maptouchevent)
-- **mapWheel**: [`MapWheelEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapwheelevent)
-- **moveStart**: [`DragEvent`](https://developer.mozilla.org/fr/docs/Web/API/DragEvent)
-- **move**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#maptouchevent) `|` [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **moveEnd**: [`DragEvent`](https://developer.mozilla.org/fr/docs/Web/API/DragEvent)
-- **mapDragStart**: [`DragEvent`](https://developer.mozilla.org/fr/docs/Web/API/DragEvent)
-- **mapDrag**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#maptouchevent) `|` [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **mapDragEnd**: [`DragEvent`](https://developer.mozilla.org/fr/docs/Web/API/DragEvent)
-- **zoomStart**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#maptouchevent) `|` [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **zoomEvt**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#maptouchevent) `|` [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **zoomEnd**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#maptouchevent) `|` [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **rotateStart**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#maptouchevent) `|` [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **rotate**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#maptouchevent) `|` [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **rotateEnd**: [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#maptouchevent) `|` [`MapMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **pitchStart**
-- **pitchEvt**
-- **pitchEnd**
-- **boxZoomStart**: [`MapBoxZoomEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapboxzoomevent)
-- **boxZoomEnd**: [`MapBoxZoomEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapboxzoomevent)
-- **boxZoomCancel**: [`MapBoxZoomEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapboxzoomevent)
-- **webGlContextLost**: `void`
-- **webGlContextRestored**: `void`
-- **mapLoad**: [`Map`](https://www.mapbox.com/mapbox-gl-js/api#map)
-- **render**: `void`
-- **mapError**
-- **data**
-- **styleData**
-- **sourceData**
-- **dataLoading**
-- **styleDataLoading**
-- **sourceDataLoading**
-
-## mgl-layer [Mapbox GL style spec](https://www.mapbox.com/mapbox-gl-js/style-spec/#layers)
-
-### Example
-
-```html
-...
-<mgl-map ...>
-  <mgl-layer
-    id="state-borders"
-    type="line"
-    [source]="states"
-    [paint]="{
-      'line-color': '#627BC1',
-      'line-width': 2
-    }"
-  ></mgl-layer>
-</mgl-map>
-```
-
-### Inputs
-
-Init only:
-
-- **id**: `string` _(Required)_
-- **source**: `string |`[`Source`](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources)
-- **type**: `'symbol' | 'fill' | 'line' | 'circle' | 'fill-extrusion' | 'raster' | 'background' | 'heatmap'` _(Required)_
-- **metadata**: `any`
-- **sourceLayer**: `string`
-
-Dynamic:
+## Browser Support
 
-- **filter**: `any[]`
-- **layout**: [`Layout`](https://www.mapbox.com/mapbox-gl-js/style-spec/#layout-property)
-- **paint**: [`Paint`](https://www.mapbox.com/mapbox-gl-js/style-spec/#paint-property)
-- **minzoom**: `number`
-- **maxzoom**: `number`
-- [ngx] **before**: `string` The ID of an existing layer to insert the new layer before. If this argument is omitted, the layer will be appended to the end of the layers array. https://www.mapbox.com/mapbox-gl-js/api/#map#addlayer
+At present, we officially aim to support the last two versions of the following browsers:
 
-### Outputs
+| Chrome | Firefox | Edge | Safari | Opera |
+|:---:|:---:|:---:|:---:|:---:|
+| <img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/chrome-logo.png?raw=true" width="64" height="64"> | <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/firefox-logo.png" width="64" height="64"> | <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/edge-logo.png" width="64" height="64"> | <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/safari-logo.png" width="64" height="64"> | <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/opera-logo.png" width="64" height="64"> |
 
-- **layerClick**: [`MapLayerMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **layerDblClick**: [`MapLayerMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **layerMouseDown**: [`MapLayerMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **layerMouseUp**: [`MapLayerMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **layerMouseEnter**: [`MapLayerMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **layerMouseLeave**: [`MapLayerMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **layerMouseMove**: [`MapLayerMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **layerMouseOver**: [`MapLayerMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **layerMouseOut**: [`MapLayerMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **layerContextMenu**: [`MapLayerMouseEvent`](https://www.mapbox.com/mapbox-gl-js/api/#mapmouseevent)
-- **layerTouchStart**: [`MapLayerTouchEvent`](https://docs.mapbox.com/mapbox-gl-js/api/events/#maptouchevent)
-- **layerTouchEnd**: [`MapLayerTouchEvent`](https://docs.mapbox.com/mapbox-gl-js/api/events/#maptouchevent)
-- **layerTouchCancel**: [`MapLayerTouchEvent`](https://docs.mapbox.com/mapbox-gl-js/api/events/#maptouchevent)
+## Reporting Issues
 
-## mgl-geojson-source [Mapbox GL style spec](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-geojson)
+We use GitHub Issues as the official bug tracker for the Notus React. Here are some advices for our users that want to report an issue:
 
-### Example
+1. Make sure that you are using the latest version of the Notus React. Check the CHANGELOG from your dashboard on our <a href="https://www.creative-tim.com/?ref=nr-readme" target="_blank">website</a>.
+2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
-```html
-...
-<mgl-map ...>
-  <mgl-geojson-source id="symbols-source">
-    <mgl-feature
-      *ngFor="let geometry of geometries"
-      [geometry]="geometry"
-    ></mgl-feature>
-  </mgl-geojson-source>
-  ...
-  <mgl-geojson-source
-    id="earthquakes"
-    [data]="earthquakes"
-    [cluster]="true"
-    [clusterMaxZoom]="14"
-    [clusterRadius]="50"
-  ></mgl-geojson-source>
-</mgl-map>
-```
+## Licensing
 
-### Inputs
+- Copyright 2021 <a href="https://www.creative-tim.com/?ref=nr-readme" target="_blank">Creative Tim</a>
 
-Init only:
+- Licensed under <a href="https://github.com/creativetimofficial/notus-react/blob/main/LICENSE.md" target="_blank">MIT</a>
 
-- **id**: `string` _(Required)_
+## Useful Links
 
-Dynamic:
+- <a href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w" target="_blank">Tutorials</a>
+- <a href="https://www.creative-tim.com/affiliates/new?ref=nr-readme" target="_blank">Affiliate Program</a> (earn money)
+- <a href="http://blog.creative-tim.com/?ref=nr-readme" target="_blank">Blog Creative Tim</a>
+- <a href="https://www.creative-tim.com/templates/free?ref=nr-readme" target="_blank">Free Products</a> from Creative Tim
+- <a href="https://www.creative-tim.com/templates/premium?ref=nr-readme" target="_blank">Premium Products</a> from Creative Tim
+- <a href="https://www.creative-tim.com/templates/react?ref=nr-readme" target="_blank">React Products</a> from Creative Tim
+- <a href="https://www.creative-tim.com/templates/angular?ref=nr-readme" target="_blank">Angular Products</a> from Creative Tim
+- <a href="https://www.creative-tim.com/templates/vuejs?ref=nr-readme" target="_blank">VueJS Products</a> from Creative Tim
+- <a href="https://www.creative-tim.com/templates?ref=nr-readme" target="_blank">More products</a> from Creative Tim
+- Check our Bundles <a href="https://www.creative-tim.com/bundles?ref=nr-readme" target="_blank">here</a>
+- Check our awesome builder <a href="https://www.creative-tim.com/builder/argon?ref=nr-readme" target="_blank">here</a>
+- Check Tailwind Starter Kit, the project behind this product <a href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation?ref=nr-readme" target="_blank">here</a>
 
-- [**data**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-geojson-data): `GeoJSON.Feature | GeoJSON.FeatureCollection | string` A URL to a GeoJSON file (fastest, because mapbox-gl will download and parse the geojson in a web worker), or inline GeoJSON.
-- [**maxzoom**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-geojson-maxzoom): `number`
-- [**buffer**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-geojson-buffer): `number`
-- [**tolerance**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-geojson-tolerance): `number`
-- [**generateId**](https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#geojson-generateId): `boolean`
-- [**cluster**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-geojson-cluster): `boolean`
-- [**clusterRadius**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-geojson-clusterRadius): `number`
-- [**clusterMaxZoom**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-geojson-clusterMaxZoom): `number`
+### Social Media
 
-## [ngx] mgl-feature (inside mgl-geojson-source only)
+Twitter: <a href="https://twitter.com/CreativeTim" target="_blank">https://twitter.com/CreativeTim</a>
 
-Init only:
+Facebook: <a href="https://www.facebook.com/CreativeTim" target="_blank">https://www.facebook.com/CreativeTim</a>
 
-- **id**: `number`
-- **geometry**: `GeoJSON.GeometryObject` _(Required)_
-- **properties**: `any`
+Dribbble: <a href="https://dribbble.com/creativetim" target="_blank">https://dribbble.com/creativetim</a>
 
-## mgl-canvas-source [Mapbox GL style spec](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-canvas)
+Instagram: <a href="https://www.instagram.com/creativetimofficial/" target="_blank">https://www.instagram.com/creativetimofficial/</a>
 
-### Inputs
 
-Init only:
-
-- **id**: `string` _(Required)_
-
-Dynamic:
-
-- [**coordinates**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-canvas-coordinates): `number[][]`
-- [**canvas**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-canvas-canvas): `string`
-- [**animate**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-canvas-animate): `boolean`
-
-## mgl-image-source [Mapbox GL style spec](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-image)
-
-### Inputs
-
-Init only:
-
-- **id**: `string` _(Required)_
-
-Dynamic:
-
-- [**url**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-image-url): `string`
-- [**coordinates**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-image-coordinates): `number[][]`
-
-## mgl-raster-source [Mapbox GL style spec](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-raster)
-
-### Inputs
-
-Init only:
-
-- **id**: `string` _(Required)_
-
-Dynamic:
-
-- [**url**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-raster-url): `string`
-- [**tiles**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-raster-tiles): `string[]`
-- [**bounds**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-raster-bounds): `number[]`
-- [**minzoom**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-raster-minzoom): `number`
-- [**maxzoom**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-raster-maxzoom): `number`
-- [**tileSize**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-raster-tileSize): `number`
-
-## mgl-vector-source [Mapbox GL style spec](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-vector)
-
-### Inputs
-
-Init only:
-
-- **id**: `string` _(Required)_
-
-Dynamic:
-
-- [**url**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-vector-url): `string`
-- [**tiles**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-vector-tiles): `string[][]`
-- [**bounds**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-vector-bounds): `number[]`
-- [**minzoom**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-vector-minzoom): `number`
-- [**maxzoom**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-vector-maxzoom): `number`
-
-## mgl-video-source [Mapbox GL style spec](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-video)
-
-### Inputs
-
-Init only:
-
-- **id**: `string` _(Required)_
-
-Dynamic:
-
-- [**urls**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-video-urls): `string[]`
-- [**coordinates**](https://www.mapbox.com/mapbox-gl-js/style-spec/#sources-video-coordinates): `number[][]`
-
-## mgl-image [Mapbox GL API](https://www.mapbox.com/mapbox-gl-js/api#map#addimage)
-
-### Example
-
-```html
-...
-<mgl-map
-  ...
->
-   <mgl-image
-     id="image"
-     url="https://..."
-     (imageLoaded)="imageLoaded = true"
-   >
-   ...
-   <mgl-image
-     id="image2"
-     [data]="{
-       width: 64,
-       height: 64,
-       data: imageData
-     }"
-   >
-</mgl-map>
-...
-imageData: Uint8Array;
-```
-
-### Inputs
-
-Init only:
-
-- **id**: `string` _(Required)_
-
-Dynamic:
-
-- **data**: `HTMLImageElement | ImageData | { width: number, height: number, data: Uint8Array | Uint8ClampedArray }`
-- **options**: `{ pixelRatio: number; sdf: boolean; }`
-- [ngx] **url**: `string` If set, will call [loadImage](https://www.mapbox.com/mapbox-gl-js/api#map#loadimage) and then add the image directly. Don't forget to listen to `loaded`.
-
-### Outputs
-
-- [ngx] **imageLoaded**: `void` Only when using `url` input. You should use this to delay the display of a layer.
-- [ngx] **imageError**: `{ status: number }` Only when using `url` input
-
-## mgl-control
-
-### Example
-
-```html
-...
-<mgl-map ...>
-  <mgl-control> Hello </mgl-control>
-  ...
-  <mgl-control mglNavigation></mgl-control>
-  ...
-  <mgl-control mglScale unit="imperial" position="top-right"></mgl-control>
-</mgl-map>
-```
-
-### Inputs
-
-Init only:
-
-- **position**: `'top-left' | 'top-right' | 'bottom-left' | 'bottom-right'`
-- [**mglAttribution**](https://www.mapbox.com/mapbox-gl-js/api#attributioncontrol) \* **compact**: `boolean`
-- [**mglFullscreen**](https://www.mapbox.com/mapbox-gl-js/api/#fullscreencontrol)
-- [**mglGeolocate**](https://www.mapbox.com/mapbox-gl-js/api/#geolocatecontrol)
-  _ **positionOptions**: [`PositionOptions`](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions)
-  _ **fitBoundsOptions**: [`FitBoundsOptions`](https://www.mapbox.com/mapbox-gl-js/api/#map#fitbounds)
-  _ **trackUserLocation**: `boolean`
-  _ **showUserLocation**: `boolean`
-- [**mglNavigation**](https://www.mapbox.com/mapbox-gl-js/api/#navigationcontrol)
-  _ **showCompass**: `boolean`
-  _ **showZoom**: `boolean`
-- [**mglScale**](https://www.mapbox.com/mapbox-gl-js/api/#scalecontrol)
-  _ **maxWidth**: `number`
-  _ **unit**: `'imperial' | 'metric' | 'nautical'` (dynamic input)
-
-## mgl-marker [Mapbox GL API](https://www.mapbox.com/mapbox-gl-js/api/#marker)
-
-### Example
-
-```html
-...
-<mgl-map ...>
-  <mgl-marker [lngLat]="[-66.324462890625, -16.024695711685304]">
-    <div (click)="alert('Foo')" class="marker">Hello</div>
-  </mgl-marker>
-</mgl-map>
-```
-
-Note: Only use this if you **really** need to use HTML/Angular component to render your symbol. These markers are slow compared to a `Layer` of symbol because they're not rendered using WebGL.
-
-### Inputs
-
-Init only:
-
-- **offset**: [`PointLike`](https://www.mapbox.com/mapbox-gl-js/api/#pointlike)
-- **anchor**: `'center' | 'top' | 'bottom' | 'left' | 'right' | 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right'`
-- **pitchAlignment**: `map` | `viewport` | `auto`
-- **rotationAlignment**: `map` | `viewport` | `auto`
-
-Dynamic:
-
-- **lngLat**: [`LngLatLike`](https://www.mapbox.com/mapbox-gl-js/api/#lnglatlike)
-- **draggable**: `boolean`
-- [ngx] **feature**: `GeoJSON.Feature<GeoJSON.Point>` Mutually exclusive with lngLat
-- [ngx] **className** `string` Class name to aply to the container
-- [ngx] **popupShown**: `boolean` Shows if the marker's popup is visible at the moment
-
-### Outputs
-
-- **markerDragStart**: [`Marker`](https://www.mapbox.com/mapbox-gl-js/api/#marker)
-- **markerDrag**: [`Marker`](https://www.mapbox.com/mapbox-gl-js/api/#marker)
-- **markerDragEnd**: [`Marker`](https://www.mapbox.com/mapbox-gl-js/api/#marker)
-
-## mgl-popup [Mapbox GL API](https://www.mapbox.com/mapbox-gl-js/api/#popup)
-
-### Example
-
-```html
-...
-<mgl-map ...>
-  <mgl-popup [lngLat]="[-96, 37.8]" [closeOnClick]="false">
-    <h1>Hello world !</h1>
-  </mgl-popup>
-  ...
-  <mgl-marker #myMarker ...> ... </mgl-marker>
-  <mgl-popup [marker]="myMarker"> Hello from marker ! </mgl-popup>
-</mgl-map>
-```
-
-### Inputs
-
-Init only:
-
-- **closeButton**: `boolean`
-- **closeOnClick**: `boolean`
-- **anchor**: `'top' | 'bottom' | 'left' | 'right' | 'top-left' | 'top-right' | 'bottom-left'`
-- **offset**: [`number |`[`PointLike`](https://www.mapbox.com/mapbox-gl-js/api/#pointlike)`| { [anchor: string]: [number, number] };`
-
-Dynamic:
-
-- **lngLat**: [`LngLatLike`](https://www.mapbox.com/mapbox-gl-js/api/#lnglatlike)
-- [ngx] **marker**: `MarkerComponent` The targeted marker (will use https://www.mapbox.com/mapbox-gl-js/api/#marker#setpopup)
-- [ngx] **feature**: `GeoJSON.Feature<GeoJSON.Point>` Mutually exclusive with lngLat
-
-### Outputs
-
-- **popupClose**: `void`
-- **popupOpen**: `void`
-
-## [ngx] mgl-markers-for-clusters
-
-Requires a geojson source that is clustered - see above.
-
-### Example
-
-```html
-...
-<mgl-map ...>
-  <mgl-markers-for-cluster [source]="myGeoJsonclusteredSource">
-    <ng-template mglPoint let-feature> Marker! </ng-template>
-    <ng-template mglClusterPoint let-feature>
-      ClusterId: {{feature.properties?.cluster_id}}, Points:
-      {{feature.properties?.point_count}}
-    </ng-template>
-  </mgl-markers-for-cluster>
-</mgl-map>
-```
-
-Note: Only use this if you **really** need to use HTML/Angular component to render your symbols. This is **slower** than rendering symbols in WebGL.
-
-### Inputs
-
-Init only:
-
-- **source**: `string | Source`
+## Resources
+- Demo: <a href="https://demos.creative-tim.com/notus-react/?ref=nr-readme" target="_blank">https://demos.creative-tim.com/notus-react/?ref=nr-readme</a>
+- Download Page: <a href="https://www.creative-tim.com/product/notus-react?ref=nr-github-readme" target="_blank">https://www.creative-tim.com/product/notus-react</a>
+- Documentation: <a href="https://www.creative-tim.com/learning-lab/tailwind/react/overview/notus?ref=nr-readme" target="_blank">https://www.creative-tim.com/learning-lab/tailwind/react/overview/notus?ref=nr-readme</a>
+- License Agreement: <a href="https://www.creative-tim.com/license?ref=nr-readme" target="_blank">https://www.creative-tim.com/license?ref=nr-readme</a>
+- Support: <a href="https://www.creative-tim.com/contact-us?ref=nr-readme" target="_blank">https://www.creative-tim.com/contact-us?ref=nr-readme</a>
+- Issues: <a href="https://github.com/creativetimofficial/notus-react/issues" target="_blank">Github Issues Page</a>

@@ -1,4 +1,4 @@
-name: notus-react
+name: soft-ui-dashboard-tailwind
 region: us-east-1
 frontend:
   # Specifies the path of your code.
@@ -11,6 +11,5 @@ frontend:
     # The command to build your frontend project. This is custom to your project.
     # It must to populate the specified `publish` folder with a `index.html` file.
     deploy:
-      - npm install
-      - npm run build
+      - npm install --legacy-peer-deps
 yamlVersion: 2
